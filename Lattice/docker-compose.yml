@@ -1,0 +1,10 @@
+version: '0.0'
+services:
+  chall:
+    build:
+      context: .
+    init: true
+    environment:
+      - FLAG=flag{OK!_secret_number_is_114514}
+    ports:
+      - 23333:23333
