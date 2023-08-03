@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  chall:
+    build:
+      context: .
+    init: true
+    environment:
+      - FLAG=TSJ{a_weird_oracle?}
+    ports:
+      - 8763:8763
